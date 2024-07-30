@@ -1,0 +1,31 @@
+.introduction-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+
+    h1 {
+        margin: 0;
+        font-size: 5rem;
+        color: #1E555C;
+        line-height: 1;
+    }
+}
+
+.image-right {
+    width: 100%;
+}
+
+.highlight {
+    color: #EDB183;
+}
+
+@media only screen and (max-width: 748px) {
+    .introduction-container {
+        grid-template-columns: 1fr;
+    }
+}

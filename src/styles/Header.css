@@ -1,0 +1,82 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  .nav-desktop {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    font-size: 1rem;
+
+    a {
+      color: #F15152;
+      font-weight: 600;
+      text-decoration: none;
+      transition: .2s all ease-in-out;
+
+      &:hover {
+        color: #1E555C;
+      }
+    }
+
+    .add-recipe-btn {
+      padding: 1rem 2rem;
+      background-color: #1E555C;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 999rem;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        color: #fff;
+        background-color: #F15152;
+        text-decoration: none;
+      }
+    }
+  }
+
+  img {
+    max-width: 12rem;
+    width: 100%;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 748px) {
+  .site-header {
+    .nav-desktop {
+      display: none;
+    }
+
+    .nav-mobile {
+      position: relative;
+      display: flex;
+
+      .hamburger {
+        svg {
+          width: 3rem;
+          height: 2rem;
+        }
+      }
+
+      .mobile-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: #1E555C;
+
+        &.active {
+          display: flex;
+        }
+      }
+    }
+  }
+}

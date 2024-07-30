@@ -1,0 +1,21 @@
+@import './Header.css';
+@import './Searchbar.css';
+@import './Introduction.css';
+@import './Recipes.css';
+
+body {
+    color: #3A2E39;
+    font-size: 1.25rem;
+    line-height: 140%;
+}
+
+.main-container {
+    max-width: 1300px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.site-header {
+    max-width: 1300px;
+    margin: 0 auto;
+}
