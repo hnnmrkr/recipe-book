@@ -2,6 +2,8 @@
 @import './Searchbar.css';
 @import './Introduction.css';
 @import './Recipes.css';
+@import 'Buttons.css';
+@import './AddRecipe.css';
 
 body {
     color: #3A2E39;

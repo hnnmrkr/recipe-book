@@ -1,0 +1,36 @@
+.back-btn {
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+    background-color: #F15152;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 999rem;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: #1E555C;
+        text-decoration: none;
+    }
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: #F15152;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 999rem;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: #1E555C;
+        text-decoration: none;
+    }
+}

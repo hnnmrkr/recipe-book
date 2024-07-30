@@ -9,8 +9,8 @@ const AddRecipePage = () => {
     };
 
     return (
-        <div>
-            <h2>Add a New Recipe</h2>
+        <div className="main-container">
+            <h2 className="recipes-title no-margin">Add a New Recipe</h2>
             <AddRecipe onAdd={handleAddRecipe} />
         </div>
     );

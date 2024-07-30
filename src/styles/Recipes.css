@@ -4,6 +4,11 @@
     color: #1E555C;
     font-size: 3rem;
     text-align: center;
+    line-height: 1;
+
+    &.no-margin {
+        margin-top: 4rem;
+    }
 }
 
 .recipes-list {
@@ -63,4 +68,20 @@
     margin: 0;
     font-size: 1.25rem;
     color: #fff;
+}
+
+.recipes-detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.recipes-detail__image {
+    display: flex;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }

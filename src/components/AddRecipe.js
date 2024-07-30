@@ -16,25 +16,35 @@ const AddRecipe = ({ onAdd }) => {
     };
 
     return (
-        <div>
-            <input
-                type="text"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-                placeholder="Recipe title"
-            />
-            <textarea
-                value={instructions}
-                onChange={(e) => setInstructions(e.target.value)}
-                placeholder="Instructions"
-            />
-            <input
-                type="text"
-                value={ingredients}
-                onChange={(e) => setIngredients(e.target.value)}
-                placeholder="Ingredients (comma separated)"
-            />
-            <button onClick={handleAdd}>Add Recipe</button>
+        <div className="add-recipe-form">
+
+            <div className="add-recipe-row">
+                <span>Recipe Title</span>
+                <input
+                    type="text"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                />
+            </div>
+
+            <div className="add-recipe-row">
+                <span>Instructions</span>
+                <textarea
+                    value={instructions}
+                    onChange={(e) => setInstructions(e.target.value)}
+                />
+            </div>
+
+            <div className="add-recipe-row">
+                <span>Ingredients (separate with a comma)</span>
+                <input
+                    type="text"
+                    value={ingredients}
+                    onChange={(e) => setIngredients(e.target.value)}
+                />
+            </div>
+
+            <button className="btn" onClick={handleAdd}>Add Recipe</button>
         </div>
     );
 };

@@ -5,18 +5,17 @@ const fetchRandomRecipes = async () => {
     try {
         const response = await fetch('https://api.spoonacular.com/recipes/random?number=12&apiKey=50b378cce4a14eadbf995b4f699828bd');
         const data = await response.json();
-        console.log('Fetched data:', data); // Logi andmed, et näha nende struktuuri
+        console.log('Fetched data:', data);
 
-        // Kontrolli, milline on API vastuse struktuur
         if (data && Array.isArray(data.recipes)) {
             return data.recipes; // Tagasta retseptide massiiv
         } else {
             console.error('API response does not contain an array of recipes:', data);
-            return []; // Tagasta tühi massiiv, kui 'recipes' ei ole massiiv
+            return [];
         }
     } catch (error) {
         console.error('Error fetching recipes:', error);
-        return []; // Tagasta tühi massiiv, kui toimub viga
+        return [];
     }
 }
 
